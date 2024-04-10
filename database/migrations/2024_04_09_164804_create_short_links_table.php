@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('code');
             $table->string('link');
             $table->string('clicks');
+            $table->string('created_by');
+
 
             $table->timestamps();
         });

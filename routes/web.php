@@ -19,6 +19,8 @@ Route::redirect('/dashboard', 'generate-shorten-link') ;
 
 
 Route::get('generate-shorten-link',[Short_LinksController::class,'index']);
+Route::get('generate-shorten-link',[Short_LinksController::class,'list']);
+
 Route::post('generate-shorten-link',[Short_LinksController::class,'store'])->name('generate.shorten.link.post');
 Route::get('{code}',[Short_LinksController::class,'shortenLink'])->name('shorten.link');
 
